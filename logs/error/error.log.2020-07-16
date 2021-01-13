@@ -1,0 +1,68 @@
+2020-07-16 08:55:47,810-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 16, in start
+    spider().run()
+TypeError: __init__() missing 1 required positional argument: 'url'
+2020-07-16 08:56:54,526-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 16, in start
+    spider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\haokanshipin.py", line 12, in __init__
+    super().__init__(self._base_url)
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 20, in __init__
+    self.client = urllib.request.Request(self._base_url, headers=self.headers)
+  File "D:\installSoftware\python\python3-6-5\lib\urllib\request.py", line 329, in __init__
+    self.full_url = url
+  File "D:\installSoftware\python\python3-6-5\lib\urllib\request.py", line 355, in full_url
+    self._parse()
+  File "D:\installSoftware\python\python3-6-5\lib\urllib\request.py", line 384, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'None'
+2020-07-16 17:44:28,005-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 25, in start
+    item_spider = spider()
+TypeError: __init__() missing 1 required positional argument: 'url'
+2020-07-16 17:58:35,482-sanic.error-zhihu_top_search.py[request:39]-ERROR : 请求处理出错 https://www.zhihu.com/api/v4/search/top_search
+2020-07-16 17:58:37,895-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 42, in stop
+    item_spider.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 46, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 57, in save2_db
+    collection_name = collection.get_name()
+AttributeError: type object 'ZhiHuTopSearchItem' has no attribute 'get_name'
+2020-07-16 17:59:02,680-sanic.error-zhihu_top_search.py[request:39]-ERROR : 请求处理出错 https://www.zhihu.com/api/v4/search/top_search

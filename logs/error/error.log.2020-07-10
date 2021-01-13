@@ -1,0 +1,539 @@
+2020-07-10 11:33:57,983-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 42, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 14, in start
+    YangtzeRiverSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 32, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 55, in request
+    self.operate_data(str_html)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 74, in operate_data
+    value_json = json.loads(value)
+  File "D:\installSoftware\python\python3-6-5\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\installSoftware\python\python3-6-5\lib\json\decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 1512 (char 1511)
+2020-07-10 11:48:56,883-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 68, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 43, in save2_db
+    value['insertTs'] = cur_ts
+TypeError: 'YangtzeRiverItem' object does not support item assignment
+2020-07-10 11:54:00,416-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 68, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 43, in save2_db
+    item['insertTs'] = cur_ts
+TypeError: 'YangtzeRiverItem' object does not support item assignment
+2020-07-10 11:57:12,677-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 68, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 35, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 41, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(data.__dict__)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 178, in get_col
+    cls._collection = db[col_name]
+TypeError: 'NoneType' object is not subscriptable
+2020-07-10 12:02:22,909-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 35, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 41, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(data.__dict__)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 698, in insert_one
+    session=session),
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 612, in _insert
+    bypass_doc_val, session)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 600, in _insert_one
+    acknowledged, _insert_command, session)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\mongo_client.py", line 1384, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 595, in _insert_command
+    retryable_write=retryable_write)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\pool.py", line 618, in command
+    self._raise_connection_failure(error)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\pool.py", line 613, in command
+    user_fields=user_fields)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\network.py", line 129, in command
+    codec_options, ctx=compression_ctx)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\message.py", line 707, in _op_msg
+    flags, command, identifier, docs, check_keys, opts)
+bson.errors.InvalidDocument: cannot encode object: <db.mapping.yangtze_river.river_place_info.RiverPlaceInfo object at 0x000001AFF3F457F0>, of type: <class 'db.mapping.yangtze_river.river_place_info.RiverPlaceInfo'>
+2020-07-10 13:10:30,860-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 35, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 41, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(dict(data))
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 698, in insert_one
+    session=session),
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 612, in _insert
+    bypass_doc_val, session)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 600, in _insert_one
+    acknowledged, _insert_command, session)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\mongo_client.py", line 1384, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\collection.py", line 595, in _insert_command
+    retryable_write=retryable_write)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\pool.py", line 618, in command
+    self._raise_connection_failure(error)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\pool.py", line 613, in command
+    user_fields=user_fields)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\network.py", line 129, in command
+    codec_options, ctx=compression_ctx)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\pymongo\message.py", line 707, in _op_msg
+    flags, command, identifier, docs, check_keys, opts)
+bson.errors.InvalidDocument: cannot encode object: <db.mapping.yangtze_river.river_place_info.RiverPlaceInfo object at 0x0000018B41DA5940>, of type: <class 'db.mapping.yangtze_river.river_place_info.RiverPlaceInfo'>
+2020-07-10 13:36:31,867-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 35, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 41, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(dict(data))
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\yangtze_river\yangtze_river_item.py", line 20, in __iter__
+    yield 'placeInfos', dict(self.placeInfos)
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:38:40,136-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 35, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 41, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(dict(data))
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\yangtze_river\yangtze_river_item.py", line 21, in __iter__
+    yield 'placeInfos', dict(self.placeInfos)
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:39:13,550-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 35, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 41, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(dict(data))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2020-07-10 13:42:04,970-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 14, in start
+    YangtzeRiverSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 32, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 55, in request
+    self.operate_data(str_html)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 74, in operate_data
+    value_json = json.loads(value)
+  File "D:\installSoftware\python\python3-6-5\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\installSoftware\python\python3-6-5\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\installSoftware\python\python3-6-5\lib\json\decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 1511 (char 1510)
+2020-07-10 13:43:27,410-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 30, in insert_data
+    cls.get_col().insert_one(dict(data))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2020-07-10 13:44:47,596-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2020-07-10 13:47:50,575-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2020-07-10 13:53:01,735-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\yangtze_river\yangtze_river_item.py", line 22, in __iter__
+    print(dict(self.placeInfos))
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:54:45,899-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\yangtze_river\yangtze_river_item.py", line 22, in __iter__
+    print(dict(self.placeInfos))
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:56:47,624-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 14, in start
+    YangtzeRiverSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 32, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 55, in request
+    self.operate_data(str_html)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 87, in operate_data
+    data_item = self.operate_data_item(cur_ts, ts, space_infos)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 101, in operate_data_item
+    data_item.placeInfos = dict(space_infos)
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:57:14,185-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 14, in start
+    YangtzeRiverSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 32, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 55, in request
+    self.operate_data(str_html)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 87, in operate_data
+    data_item = self.operate_data_item(cur_ts, ts, space_infos)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 102, in operate_data_item
+    data_item.placeInfos = dict(space_infos)
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:58:00,748-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 14, in start
+    YangtzeRiverSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 32, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 55, in request
+    self.operate_data(str_html)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 87, in operate_data
+    data_item = self.operate_data_item(cur_ts, ts, space_infos)
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 102, in operate_data_item
+    data_item.placeInfos = dict(space_infos)
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 13:58:28,279-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\yangtze_river\yangtze_river_item.py", line 22, in __iter__
+    print(dict(self.placeInfos))
+ValueError: dictionary update sequence element #0 has length 8; 2 is required
+2020-07-10 14:01:34,976-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2020-07-10 14:02:53,987-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+2020-07-10 14:04:05,262-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+2020-07-10 14:04:29,874-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 861, in serve
+    trigger_events(before_stop, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 72, in stop
+    SpiderMgr.stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 18, in stop
+    YangtzeRiverSpider().stop()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 36, in stop
+    self.save2_db()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\yangtze_river.py", line 42, in save2_db
+    YangtzeRiver.insert_data(value)
+  File "D:\work\python\pycharm\200506\cgspiders\db\mapping\basemap.py", line 32, in insert_data
+    logger.info("insert data: " + str(dict(data)))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+2020-07-10 16:51:16,594-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 16, in start
+    HaokanHotWordsSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\haokan_hotwords.py", line 29, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\haokan_hotwords.py", line 39, in request
+    logger.info("请求得到数据: " + res_json)
+TypeError: must be str, not dict
+2020-07-10 16:52:22,890-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\spidermgr.py", line 16, in start
+    HaokanHotWordsSpider().run()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\haokan_hotwords.py", line 29, in run
+    self.request()
+  File "D:\work\python\pycharm\200506\cgspiders\spiders\haokan_hotwords.py", line 53, in request
+    res_dict = json.loads(res_json['data']['response']['hotwords'])
+  File "D:\installSoftware\python\python3-6-5\lib\json\__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'list'
+2020-07-10 17:40:00,524-sanic.error-basemap.py[insert_data:36]-ERROR : '>' not supported between instances of 'ObjectId' and 'int'
+2020-07-10 17:40:00,524-sanic.error-yangtze_river.py[save2_db:125]-ERROR : YangtzeRiver数据落地出错

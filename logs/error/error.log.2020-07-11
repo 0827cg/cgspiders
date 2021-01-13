@@ -1,0 +1,54 @@
+2020-07-11 15:49:33,840-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\newInstallSoftware\python-3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\newInstallSoftware\python-3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\newInstallSoftware\python-3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\cgspiders\spiders\spidermgr.py", line 18, in start
+    JiangxiRiverSpider().run()
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 34, in run
+    self.request()
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 45, in request
+    suc = self.operate_data(res_dict)
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 55, in operate_data
+    data_item = self.operate_item_data(cur_ts, dict_data)
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 65, in operate_item_data
+    item.desc = self.operate_item_space(dict_data['summarize'])
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 72, in operate_item_space
+    data = self.build_space_info(item)
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 79, in build_space_info
+    item_data.hTM = dict_info['hTM']
+TypeError: string indices must be integers
+2020-07-11 15:51:45,316-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\newInstallSoftware\python-3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\newInstallSoftware\python-3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\newInstallSoftware\python-3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\cgspiders\spiders\spidermgr.py", line 18, in start
+    JiangxiRiverSpider().run()
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 34, in run
+    self.request()
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 45, in request
+    suc = self.operate_data(res_dict)
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 55, in operate_data
+    data_item = self.operate_item_data(cur_ts, dict_data)
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 65, in operate_item_data
+    item.desc = self.operate_item_space(dict_data['summarize'])
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 72, in operate_item_space
+    data = self.build_space_info(item)
+  File "D:\work\python\pycharm\cgspiders\spiders\jiangxi_river.py", line 79, in build_space_info
+    print(dict_info['hTM'])
+TypeError: string indices must be integers
+2020-07-11 17:03:29,165-sanic.error-basemap.py[insert_data:36]-ERROR : document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2020-07-11 17:03:29,166-sanic.error-jiangxi_reservoir.py[save2_db:100]-ERROR : JiangxiReservoir数据落地出错
+2020-07-11 17:04:21,968-sanic.error-basemap.py[insert_data:36]-ERROR : document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2020-07-11 17:04:21,969-sanic.error-jiangxi_reservoir.py[save2_db:100]-ERROR : JiangxiReservoir数据落地出错

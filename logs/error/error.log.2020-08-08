@@ -1,0 +1,318 @@
+2020-08-08 16:13:04,276-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 42, in __init__
+    self.check_generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 118, in check_generate_config_schema
+    exist = com_util.check_file_exist(self.get_conf_file_path())
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 115, in get_conf_file_path
+    return self.get_conf_path() + os.sep + self._get_config_name()
+TypeError: must be str, not NoneType
+2020-08-08 16:16:07,114-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 42, in __init__
+    self.check_generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 122, in check_generate_config_schema
+    self._generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 146, in _generate_config_schema
+    com_util.write_to_json(data, self.get_conf_file_path())
+  File "D:\work\python\pycharm\200506\cgspiders\util\com_util.py", line 124, in write_to_json
+    data = pretty_to_json(data)
+  File "D:\work\python\pycharm\200506\cgspiders\util\com_util.py", line 113, in pretty_to_json
+    return json.dumps(params_dict, indent=4, ensure_ascii=False)
+  File "D:\installSoftware\python\python3-6-5\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\installSoftware\python\python3-6-5\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "D:\installSoftware\python\python3-6-5\lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "D:\installSoftware\python\python3-6-5\lib\json\encoder.py", line 404, in _iterencode_dict
+    yield from chunks
+  File "D:\installSoftware\python\python3-6-5\lib\json\encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "D:\installSoftware\python\python3-6-5\lib\json\encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "D:\installSoftware\python\python3-6-5\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AccountInfo' is not JSON serializable
+2020-08-08 16:19:27,355-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 42, in __init__
+    self.check_generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 120, in check_generate_config_schema
+    self._generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 141, in _generate_config_schema
+    data[const.spiderCookiesKey] = account_infos.__dict__
+AttributeError: 'list' object has no attribute '__dict__'
+2020-08-08 16:19:58,851-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 42, in __init__
+    self.check_generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 120, in check_generate_config_schema
+    self._generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 141, in _generate_config_schema
+    data[const.spiderCookiesKey] = account_infos.__dict__
+AttributeError: 'list' object has no attribute '__dict__'
+2020-08-08 16:20:46,769-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 42, in __init__
+    self.check_generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 120, in check_generate_config_schema
+    self._generate_config_schema()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\base_spider.py", line 143, in _generate_config_schema
+    com_util.write_to_json(data, self.get_conf_file_path())
+  File "D:\work\python\pycharm\200506\cgspiders\util\com_util.py", line 126, in write_to_json
+    with open(file_path, 'w', encoding='utf-8') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\work\\python\\pycharm\\200506\\cgspiders\\conf\\spiders\\baiduTiebaCollection.json'
+2020-08-08 16:22:48,441-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 25, in start
+    item_spider.run()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 48, in run
+    SchedulerMgr.add_job_cron(self.request_begin, day_of_week='*', hour='*', minute='/5', second='*')
+  File "D:\work\python\pycharm\200506\cgspiders\operate\schedulermgr.py", line 56, in add_job_cron
+    cls._scheduler.add_job(func, trigger='cron', day_of_week=day_of_week, hour=hour, minute=minute, second=second)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\schedulers\base.py", line 420, in add_job
+    'trigger': self._create_trigger(trigger, trigger_args),
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\schedulers\base.py", line 921, in _create_trigger
+    return self._create_plugin_instance('trigger', trigger, trigger_args)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\schedulers\base.py", line 906, in _create_plugin_instance
+    return plugin_cls(**constructor_kwargs)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\__init__.py", line 82, in __init__
+    field = field_class(field_name, exprs, is_default)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\fields.py", line 33, in __init__
+    self.compile_expressions(exprs)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\fields.py", line 58, in compile_expressions
+    self.compile_expression(expr)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\fields.py", line 75, in compile_expression
+    raise ValueError('Unrecognized expression "%s" for field "%s"' % (expr, self.name))
+ValueError: Unrecognized expression "/5" for field "minute"
+2020-08-08 16:25:02,001-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:03,001-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:04,004-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:05,002-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:06,000-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:07,004-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:08,004-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:09,004-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:25:10,002-sanic.error-baidutieba_collection.py[request:55]-ERROR : cookie未配置
+2020-08-08 16:28:27,000-sanic.error-baidutieba_collection.py[request:52]-ERROR : 配置为空
+2020-08-08 16:28:30,001-sanic.error-baidutieba_collection.py[request:52]-ERROR : 配置为空
+2020-08-08 16:28:57,001-sanic.error-baidutieba_collection.py[request:52]-ERROR : 配置为空
+2020-08-08 16:29:00,001-sanic.error-baidutieba_collection.py[request:52]-ERROR : 配置为空
+2020-08-08 16:32:33,011-sanic.error-baidutieba_collection.py[request:52]-ERROR : 配置为空
+2020-08-08 16:32:36,007-sanic.error-baidutieba_collection.py[request:52]-ERROR : 配置为空
+2020-08-08 16:53:51,488-sanic.error-baidutieba_collection.py[analysis_card_info:159]-ERROR : 未找到embed视频标签
+2020-08-08 16:54:13,648-sanic.error-baidutieba_collection.py[analysis_card_info:159]-ERROR : 未找到embed视频标签
+2020-08-08 16:54:14,766-sanic.error-baidutieba_collection.py[analysis_card_info:159]-ERROR : 未找到embed视频标签
+2020-08-08 16:54:16,498-sanic.error-baidutieba_collection.py[analysis_card_info:159]-ERROR : 未找到embed视频标签
+2020-08-08 16:54:16,835-sanic.error-baidutieba_collection.py[analysis_card_info:159]-ERROR : 未找到embed视频标签
+2020-08-08 16:57:06,014-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 44, in __init__
+    self.boot_db_data()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 175, in boot_db_data
+    url = data.pUrl
+AttributeError: 'NoneType' object has no attribute 'pUrl'
+2020-08-08 16:59:24,255-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 44, in __init__
+    self.boot_db_data()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 176, in boot_db_data
+    url = data.pUrl
+AttributeError: 'NoneType' object has no attribute 'pUrl'
+2020-08-08 17:00:09,168-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 44, in __init__
+    self.boot_db_data()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 176, in boot_db_data
+    url = data.pUrl
+AttributeError: 'NoneType' object has no attribute 'pUrl'
+2020-08-08 17:01:52,172-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 24, in start
+    item_spider = spider()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 44, in __init__
+    self.boot_db_data()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 176, in boot_db_data
+    url = data.pUrl
+AttributeError: 'NoneType' object has no attribute 'pUrl'
+2020-08-08 17:09:05,001-sanic.error-baidutieba_collection.py[request:65]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:00,012-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:01,017-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:02,011-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:03,014-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:04,009-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:05,016-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:10:06,011-sanic.error-baidutieba_collection.py[request:66]-ERROR : 未获取到cookie, accountName: XSY错过
+2020-08-08 18:11:42,579-sanic.error-app.py[run:1175]-ERROR : Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\app.py", line 1170, in run
+    serve(**server_settings)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 840, in serve
+    trigger_events(after_start, loop)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\sanic\server.py", line 646, in trigger_events
+    result = event(loop)
+  File "D:\work\python\pycharm\200506\cgspiders\operate\framemgr.py", line 46, in boot_module
+    SpiderMgr.start()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spidermgr.py", line 25, in start
+    item_spider.run()
+  File "D:\work\python\pycharm\200506\cgspiders\crawl\spiders\baidutieba_collection.py", line 49, in run
+    SchedulerMgr.add_job_cron(self.request_begin, day_of_week='*', hour='*', minute='*', second='*10')
+  File "D:\work\python\pycharm\200506\cgspiders\operate\schedulermgr.py", line 56, in add_job_cron
+    cls._scheduler.add_job(func, trigger='cron', day_of_week=day_of_week, hour=hour, minute=minute, second=second)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\schedulers\base.py", line 420, in add_job
+    'trigger': self._create_trigger(trigger, trigger_args),
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\schedulers\base.py", line 921, in _create_trigger
+    return self._create_plugin_instance('trigger', trigger, trigger_args)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\schedulers\base.py", line 906, in _create_plugin_instance
+    return plugin_cls(**constructor_kwargs)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\__init__.py", line 82, in __init__
+    field = field_class(field_name, exprs, is_default)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\fields.py", line 33, in __init__
+    self.compile_expressions(exprs)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\fields.py", line 58, in compile_expressions
+    self.compile_expression(expr)
+  File "D:\installSoftware\python\python3-6-5\lib\site-packages\apscheduler\triggers\cron\fields.py", line 75, in compile_expression
+    raise ValueError('Unrecognized expression "%s" for field "%s"' % (expr, self.name))
+ValueError: Unrecognized expression "*10" for field "second"
+2020-08-08 18:12:01,969-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-08 18:13:09,001-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-08 18:13:10,293-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-08 18:13:11,941-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-08 18:13:12,265-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:01,959-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:01,960-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-08 18:14:23,611-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:23,611-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-08 18:14:24,614-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:24,614-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-08 18:14:26,282-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:26,283-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-08 18:14:26,583-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:26,584-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-08 18:14:31,722-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:31,723-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-08 18:14:52,598-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:52,598-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-08 18:14:53,660-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:53,660-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-08 18:14:55,661-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:55,662-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-08 18:14:56,211-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:14:56,212-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-08 18:17:51,849-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:17:51,849-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-08 18:18:12,764-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:12,765-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-08 18:18:13,781-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:13,782-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-08 18:18:15,426-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:15,427-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-08 18:18:15,760-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:15,760-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-08 18:18:22,149-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:22,150-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-08 18:18:44,017-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:44,017-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-08 18:18:45,104-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:45,104-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-08 18:18:46,985-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:46,986-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-08 18:18:47,307-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-08 18:18:47,307-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665

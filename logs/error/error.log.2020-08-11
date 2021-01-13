@@ -1,0 +1,70 @@
+2020-08-11 09:29:42,185-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-11 09:29:42,186-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 09:30:49,899-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-11 09:30:49,899-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 09:30:51,521-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-11 09:30:51,521-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 09:30:53,214-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-11 09:30:53,214-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 09:30:53,733-sanic.error-baidutieba_collection.py[analysis_card_info:164]-ERROR : 未找到embed视频标签
+2020-08-11 09:30:53,733-sanic.error-baidutieba_collection.py[request_card_page:148]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-11 09:42:21,136-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:42:21,136-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 09:43:32,497-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:43:32,521-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 09:43:36,491-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:43:36,491-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 09:43:41,208-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:43:41,208-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 09:43:44,626-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:43:44,626-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-11 09:48:04,901-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:48:04,902-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 09:49:13,884-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:49:13,884-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 09:49:17,817-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:49:17,817-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 09:49:22,497-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:49:22,497-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 09:49:25,843-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 09:49:25,844-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-11 14:48:16,201-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:16,201-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 14:48:41,318-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:41,320-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 14:48:42,458-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:42,458-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 14:48:44,152-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:44,153-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 14:48:44,561-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:44,561-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-11 14:48:57,606-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:57,606-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 14:48:58,979-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:48:58,979-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 14:49:00,059-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:49:00,059-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 14:49:02,443-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:49:02,443-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 14:49:02,793-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:49:02,793-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-11 14:51:51,989-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:51:51,990-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 14:51:53,415-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:51:53,415-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 14:51:54,782-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:51:54,783-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 14:51:56,778-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:51:56,779-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 14:51:57,083-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-11 14:51:57,083-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665
+2020-08-11 14:59:16,932-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 14:59:16,932-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757
+2020-08-11 14:59:18,879-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 14:59:18,880-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6195991191
+2020-08-11 14:59:20,183-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 14:59:20,184-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6169484947
+2020-08-11 14:59:21,849-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 14:59:21,850-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/4404960265
+2020-08-11 14:59:22,204-sanic.error-baidutieba_collection.py[analysis_card_info:166]-ERROR : 未找到embed视频标签
+2020-08-11 14:59:22,204-sanic.error-baidutieba_collection.py[request_card_page:150]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6519289665

@@ -1,0 +1,2 @@
+2020-08-25 10:45:58,163-sanic.error-baidutieba_collection.py[analysis_card_info:165]-ERROR : 未找到embed视频标签
+2020-08-25 10:45:58,164-sanic.error-baidutieba_collection.py[request_card_page:149]-ERROR : 未获取到video url, 帖子url: http://tieba.baidu.com/p/6779800757

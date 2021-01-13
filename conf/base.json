@@ -1,0 +1,7 @@
+{
+    "server": "server.json",
+    "mongo": "mongo.json",
+    "scanMinute": 1,
+    "threadNum": 20,
+    "processNum": 5
+}

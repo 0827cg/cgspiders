@@ -1,0 +1,15 @@
+2020-08-19 19:07:44,195-sanic.root-app.py[_helper:1420]-INFO : Goin' Fast @ http://127.0.0.1:8003
+2020-08-19 19:07:44,197-sanic.root-framemgr.py[register_http_route:49]-INFO : 注册http路由
+2020-08-19 19:07:46,345-sanic.root-schedulermgr.py[add_job_cron:55]-INFO : 添加cron定时模块: <bound method BaseSpider.request_begin of <crawl.spiders.yangtze_river.YangtzeRiverSpider object at 0x000002413822FA90>>
+2020-08-19 19:07:46,346-sanic.root-schedulermgr.py[add_job_cron:55]-INFO : 添加cron定时模块: <bound method BaseSpider.request_begin of <crawl.spiders.haokan_hotwords.HaokanHotWordsSpider object at 0x0000024138220438>>
+2020-08-19 19:07:46,347-sanic.root-schedulermgr.py[add_job_cron:55]-INFO : 添加cron定时模块: <bound method BaseSpider.request_begin of <crawl.spiders.jiangxi_river.JiangxiRiverSpider object at 0x0000024138220588>>
+2020-08-19 19:07:46,348-sanic.root-schedulermgr.py[add_job_cron:55]-INFO : 添加cron定时模块: <bound method BaseSpider.request_begin of <crawl.spiders.jiangxi_reservoir.JiangxiReservoirSpider object at 0x000002413822FBA8>>
+2020-08-19 19:07:46,348-sanic.root-schedulermgr.py[add_job_cron:55]-INFO : 添加cron定时模块: <bound method BaseSpider.request_begin of <crawl.spiders.zhihu_top_search.ZhiHuTopSearchSpider object at 0x00000241382370B8>>
+2020-08-19 19:07:46,371-sanic.root-schedulermgr.py[add_job_interval_minute:50]-INFO : 添加定时模块: <bound method BaseSpider.request_begin of <crawl.spiders.baidutieba_collection.BaiduTiebaCollectionSpider object at 0x0000024138237710>>
+2020-08-19 19:07:46,372-sanic.root-schedulermgr.py[add_job_cron:55]-INFO : 添加cron定时模块: <bound method SpiderMgr.save2_db of <class 'crawl.spidermgr.SpiderMgr'>>
+2020-08-19 19:07:46,374-sanic.root-server.py[serve:855]-INFO : Starting worker [4184]
+2020-08-19 19:13:46,374-sanic.root-base_spider.py[request_begin:48]-INFO : 执行请求: http://tieba.baidu.com/i/i/storethread
+2020-08-19 19:13:50,068-sanic.root-base_spider.py[save2_db:83]-INFO : baiduTiebaCollection数据已落地
+2020-08-19 19:14:02,802-sanic.root-server.py[serve:858]-INFO : Stopping worker [4184]
+2020-08-19 19:14:02,802-sanic.root-framemgr.py[stop:73]-INFO : stop
+2020-08-19 19:14:02,803-sanic.root-app.py[run:1180]-INFO : Server Stopped
